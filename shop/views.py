@@ -1,5 +1,6 @@
 from django.shortcuts import render,HttpResponse,redirect
 from .form import ContactForm
+
 # Create your views here.
 
 def index(request):
