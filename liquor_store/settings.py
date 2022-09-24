@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #My_Core_Styling
+    # My_Core_Styling
     'django_bootstrap5',
-    #My_Apps
+    # Icon Fonts
+    
+    # My_Apps
     'shop',
 ]
 
