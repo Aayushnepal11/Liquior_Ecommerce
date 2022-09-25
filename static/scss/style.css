@@ -5,17 +5,19 @@ body {
 }
 
 .bg-light {
-  background: linear-gradient(to right, rgb(8, 8, 8), rgb(8, 3, 9)) !important;
+  background: #010101 !important;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex: 1;
   color: #fff;
   text-shadow: 1px 2px 3px #0c0ce0;
   font-size: 24px;
+}
+.navbar-brand:hover {
+  color: #fff;
 }
 .navbar-brand span {
   color: #0c0ce0;
@@ -32,11 +34,15 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .nav-link:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.nav-link {
   color: #fff;
 }
 
@@ -60,11 +66,22 @@ body {
   height: 750px;
   width: 100%;
   background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+}
+.hero-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
 }
 
 .slider-text {
   width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   transform: rotate(-20deg);
@@ -72,6 +89,7 @@ body {
   margin: auto;
   top: 10rem;
   left: 7rem;
+  z-index: 5;
   position: relative;
 }
 .slider-text h1 {
@@ -87,4 +105,51 @@ body {
 .slider-text h1 span {
   -webkit-text-fill-color: #fff;
   text-align: center;
+}
+
+.btn {
+  border: none;
+  background: rgb(182, 71, 43);
+  width: 120px;
+  padding: 10px 0;
+  margin: 10px;
+}
+.btn:hover {
+  background: rgb(182, 71, 43);
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #ccc;
+}
+.btn-secondary:hover, .btn-secondary:focus {
+  background: rgb(182, 71, 43);
+  border: none;
+}
+
+.about {
+  margin-top: 15px;
+}
+.about .text-center::after, .about .text-center::before {
+  position: absolute;
+  content: "";
+  background: rgb(9, 48, 175);
+  width: 250px;
+  height: 5px;
+  text-align: center;
+}
+.about .text-center::after {
+  right: 28%;
+}
+.about .text-center::before {
+  left: 28%;
+}
+.about .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.about .wrapper .aboutUS_img {
+  background: url("../img/about.jpg") no-repeat;
 }/*# sourceMappingURL=style.css.map */
