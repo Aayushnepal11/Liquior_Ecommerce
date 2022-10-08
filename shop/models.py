@@ -1,21 +1,24 @@
 from django.db import models
 
+
 # Create your models here.
 
-
-class Featured:
-    name = models.CharField(max_length=80)
+class FeaturedProducts(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(blank=True, null=True, upload_to='img')
     description = models.TextField()
-    image = models.ImageField()
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Featured Product'
 
     def __str__(self):
         return self.name
 
     @property
-    def imgURL(self):
+    def imageURL(self):
         try:
             url = self.image.url
         except:
