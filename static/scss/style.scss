@@ -19,6 +19,24 @@
     margin-top: 5px;
 }
 
+@mixin Btn {
+    border: none;
+    background: rgb(182, 71, 43);
+    width: 120px;
+    padding: 10px 0;
+    margin: 10px;
+
+    &:hover {
+        background: rgb(182, 71, 43);
+    }
+    
+    &:focus{
+        background: rgb(182, 71, 43) !important;
+        box-shadow: none !important;
+    }
+
+}
+
 body {
     background: #fff;
     font-size: 16px;
@@ -135,15 +153,7 @@ body {
 }
 
 .btn {
-    border: none;
-    background: rgb(182, 71, 43);
-    width: 120px;
-    padding: 10px 0;
-    margin: 10px;
-
-    &:hover {
-        background: rgb(182, 71, 43);
-    }
+    @include Btn();
 }
 
 .btn-secondary {
@@ -168,7 +178,7 @@ body {
             @include PseudoBefore();
         }
     }
-    
+
 
     .row {
         padding-top: 40px;
@@ -180,33 +190,40 @@ body {
             background-size: cover;
             background-position: center center;
         }
-        .description{
+
+        .description {
             display: flex;
         }
     }
 }
 
-.products{
+.products {
     position: relative;
     padding: 2rem 0;
-    .text-center{
+
+    .text-center {
         position: relative;
-        &::before{
+
+        &::before {
             @include PseudoBefore();
         }
     }
-    .row{
+
+    .row {
         padding: 35px 0;
     }
 }
 
-.footer{
+
+
+.footer {
     padding: 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #010101;
-    .copy{
+
+    .copy {
         color: #fff;
         font-size: 22px;
         letter-spacing: 2px;

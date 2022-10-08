@@ -132,6 +132,10 @@ body {
 .btn:hover {
   background: rgb(182, 71, 43);
 }
+.btn:focus {
+  background: rgb(182, 71, 43) !important;
+  box-shadow: none !important;
+}
 
 .btn-secondary {
   background: none;

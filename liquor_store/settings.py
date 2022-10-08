@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     # Icon Fonts
     
     # My_Apps
-    'shop',
+    'shop.apps.ShopConfig',
 ]
 
 MIDDLEWARE = [
@@ -125,6 +125,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+MEDIA_URL = '/img/'
+MEDIA_ROOT = '/img/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

@@ -1,8 +1,10 @@
+from pyexpat import model
 from django.contrib import admin
-from .models import Featured
+from .models import FeaturedProducts
 
 # Register your models here.
 
-@admin.register(Featured)
-class FeatureAdmin(admin.ModelAdmin):
-    pass
+
+@admin.register(FeaturedProducts)
+class FeatureProductAdmin(admin.ModelAdmin):
+    list_display = ('name',)
