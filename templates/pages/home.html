@@ -1,33 +1,81 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <div class="hero-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="slider-text">
-                    <h1 class="mb-4 text-center">
-                        Good
-                        <span>Drink</span>
-                        for Good
-                        <span>Moments</span>
-                    </h1>
-                    <div class="d-felx">
-                        <a href="" class="btn btn-primary">Shop Now</a>
-                        <a href="" class="btn btn-secondary">Read More</a>
-                    </div>
+<div class="hero-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="slider-text">
+                <h1 class="mb-4 text-center">
+                    Good
+                    <span>Drink</span>
+                    for Good
+                    <span>Moments</span>
+                </h1>
+                <div class="d-felx">
+                    <a href="" class="btn btn-primary">Shop Now</a>
+                    <a href="" class="btn btn-secondary">Read More</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <section class="about">
-                <h1 class="text-center">About Us</h1>
-                <div class="wrapper">
-                    <div class="aboutUs_img"></div>
-                    <div class="description"></div>
+</div>
+<div class="container">
+    <div class="row">
+        <section class="about">
+            <h1 class="text-center">About Us</h1>
+            <div class="row">
+                <div class="col-md-6 aboutUs_img d-flex justify-content-center align-items-center img-thumbnail"></div>
+                <div class="col-md-6 justify-conent-center align-items-center description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam dignissimos
+                        culpa eos! Ut at totam distinctio nulla eum reprehenderit eveniet, dolor quia amet fuga nobis
+                        sapiente assumenda, labore corporis dicta. </p>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="products">
+            <h1 class="text-center">Featured Products</h1>
+            <div class="row m-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </div>
+</div>
 {% endblock content %}

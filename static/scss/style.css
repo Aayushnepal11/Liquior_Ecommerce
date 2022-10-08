@@ -1,3 +1,18 @@
+@media only screen and (max-width: 420px) {
+  .navbar-toggler {
+    background: #fff !important;
+  }
+  .hero-wrap {
+    height: auto;
+  }
+  .slider-text {
+    left: 20%;
+  }
+}
+.card {
+  margin-left: 10px;
+}
+
 body {
   background: #fff;
   font-size: 16px;
@@ -128,28 +143,67 @@ body {
 }
 
 .about {
-  margin-top: 15px;
+  position: relative;
+  padding: 6rem 0;
 }
-.about .text-center::after, .about .text-center::before {
+.about .text-center {
+  position: relative;
+}
+.about .text-center::before {
   position: absolute;
   content: "";
   background: rgb(9, 48, 175);
   width: 250px;
   height: 5px;
   text-align: center;
+  left: 41%;
+  top: 95%;
+  margin-top: 5px;
 }
-.about .text-center::after {
-  right: 28%;
+.about .row {
+  padding-top: 40px;
 }
-.about .text-center::before {
-  left: 28%;
+.about .row .aboutUs_img {
+  background: url("../img/about.jpg") no-repeat;
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
 }
-.about .wrapper {
+.about .row .description {
+  display: flex;
+}
+
+.products {
+  position: relative;
+  padding: 2rem 0;
+}
+.products .text-center {
+  position: relative;
+}
+.products .text-center::before {
+  position: absolute;
+  content: "";
+  background: rgb(9, 48, 175);
+  width: 250px;
+  height: 5px;
+  text-align: center;
+  left: 41%;
+  top: 95%;
+  margin-top: 5px;
+}
+.products .row {
+  padding: 35px 0;
+}
+
+.footer {
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
+  background: #010101;
 }
-.about .wrapper .aboutUS_img {
-  background: url("../img/about.jpg") no-repeat;
+.footer .copy {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=style.css.map */
