@@ -1,6 +1,5 @@
-from pyexpat import model
 from django.contrib import admin
-from .models import FeaturedProducts
+from .models import FeaturedProducts, Contact
 
 # Register your models here.
 
@@ -8,3 +7,7 @@ from .models import FeaturedProducts
 @admin.register(FeaturedProducts)
 class FeatureProductAdmin(admin.ModelAdmin):
     list_display = ('name',)
+
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name', )

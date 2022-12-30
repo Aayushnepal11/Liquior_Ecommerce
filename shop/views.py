@@ -1,6 +1,8 @@
 from django.shortcuts import render, HttpResponse, redirect
 from .form import ContactForm
 
+from django.contrib import messages
+
 from .models import FeaturedProducts
 
 
@@ -26,10 +28,10 @@ def product(request):
 def contact(request):
     if request.method == "POST":
         form = ContactForm(request.POST)
-        valid = form.is_valid()
-        if valid:
+        if form.is_valid():
             form.save()
-            return redirect('store:home')
+            messages.success(request, 'FeedBack Sent Sucessfully')
+            return redirect('store:contact')
     else:
         form = ContactForm()
         context = {

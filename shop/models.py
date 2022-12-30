@@ -24,3 +24,15 @@ class FeaturedProducts(models.Model):
         except:
             url = ''
         return url
+
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField()
+
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name_plural = 'Contact'
+        
