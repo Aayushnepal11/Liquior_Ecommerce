@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="516e4654-6995-4e70-a5db-fb8e6c0778cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquor_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/liquor_store/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/_form.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,15 +31,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Django-Projects/Liquir_Com",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RunManager">
     <configuration name="liquor_store" type="Python.DjangoServer" factoryName="Django server">
       <module name="liquor_store" />
@@ -70,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1665247049170</updated>
       <workItem from="1665247052762" duration="67000" />
+      <workItem from="1674201075692" duration="1520000" />
+      <workItem from="1674227361475" duration="619000" />
     </task>
     <servers />
   </component>
