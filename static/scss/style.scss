@@ -87,6 +87,15 @@ body {
 
 .nav-link {
     color: #fff;
+    span{
+        position: absolute;
+        top: 4px;
+        right: 60px;
+        color: green;
+        padding: 0 7px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
 }
 
 .r-nav {
