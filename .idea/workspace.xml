@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="516e4654-6995-4e70-a5db-fb8e6c0778cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/liquor_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/liquor_store.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/_form.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/scss/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/_home.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/manageUsers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +73,7 @@
       <updated>1665247049170</updated>
       <workItem from="1665247052762" duration="67000" />
       <workItem from="1674201075692" duration="1520000" />
+      <workItem from="1674227361475" duration="619000" />
     </task>
     <servers />
   </component>
