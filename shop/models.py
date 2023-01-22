@@ -1,5 +1,5 @@
 from django.db import models
-from pathlib import Path
+
 
 # Create your models here.
 
