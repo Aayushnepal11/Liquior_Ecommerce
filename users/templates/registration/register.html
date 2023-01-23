@@ -4,6 +4,7 @@
     <form method="post" action="{% url 'users:register' %}">
         {% csrf_token %}
         {% bootstrap_form form  %}
+        {% comment %} {{ form }} {% endcomment %}
         {% bootstrap_button "Register" name="submit" class="btn btn-primary" %}
         <input type="hidden" value="{% url 'store:home' %}" name="next"/>
     </form>
