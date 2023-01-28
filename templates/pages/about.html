@@ -1,15 +1,39 @@
 {% extends 'index.html' %}
-
+{% load static %}
 {% block content %}
+    <img src="{% static './img/banner_about.jpg' %}" alt="" class="img img-fluid">
     <div class="container">
         <div class="row">
-            <p>A liquor store is a retail shop that predominantly sells prepackaged liquors – typically in bottles –
-                usually intended to be consumed off the store's premises. Depending on region and local idiom, they may
-                also be called an off-licence (in the UK and Ireland), off-sale (in parts of Canada and the US), bottle
-                shop, bottle store or, colloquially, bottle-o (in Australia, New Zealand and parts of Canada), liquor
-                store (in Canada, the US, Australia and New Zealand) or other similar terms. A very limited number of
-                jurisdictions have an alcohol monopoly. In US states that are alcoholic beverage control (ABC) states,
-                the term ABC store may be used.</p>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                            About Liquor
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A liquor store is a retail shop that predominantly sells prepackaged
+                            liquors – typically in bottles –
+                            usually intended to be consumed off the store's premises. Depending on region and local
+                            idiom, they may
+                            also be called an off-licence (in the UK and Ireland), off-sale (in parts of Canada and the
+                            US), bottle
+                            shop, bottle store or, colloquially, bottle-o (in Australia, New Zealand and parts of
+                            Canada), liquor
+                            store (in Canada, the US, Australia and New Zealand) or other similar terms. A very limited
+                            number of
+                            jurisdictions have an alcohol monopoly. In US states that are alcoholic beverage control
+                            (ABC) states,
+                            the term ABC store may be used.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 {% endblock content %}

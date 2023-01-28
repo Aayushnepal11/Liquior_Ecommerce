@@ -12,7 +12,7 @@ from cart.forms import ADDtoCartForm
 def index(request):
     content = {
         'title': 'Home',
-
+        'product': Product.objects.filter(price=200)
     }
     return render(request, 'pages/home.html', content)
 
