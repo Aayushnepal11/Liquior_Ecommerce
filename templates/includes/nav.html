@@ -1,42 +1,53 @@
 <nav class="navbar navbar-expand-lg bg-light" style="z-index:100;">
     <div class="container">
-      <a class="navbar-brand" href="{% url 'store:home' %}">Liquor <span>Store</span> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav l-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'store:home' %}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'store:about' %}">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'store:product' %}">Poducts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'store:contact' %}">Contact</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav r-nav">
-          {% if user.is_authenticated %}
-              <p style="color:#fff; margin:0;"> Hello,{{ user.username }}</p>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'users:logout' %}">Logout</a>
-            </li>
-            {% else %}
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'users:login' %}">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'users:register' %}">Register</a>
-              </li>
-          {% endif %}
-          <li class="nav-item">
-            <a class="nav-link" href="">Cart<span>0</span></a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="{% url 'store:home' %}">Liquor <span>Store</span> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav l-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'store:home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'store:about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'store:product' %}">Poducts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'store:contact' %}">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav r-nav">
+                {% if user.is_authenticated %}
+                    <p style="color:#fff; margin:0;"> Hello,{{ user.username }}</p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:logout' %}">Logout</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:login' %}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'users:register' %}">Register</a>
+                    </li>
+                {% endif %}
+                {% with total_items=cart %}
+                    {% if total_items %}
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="{% url 'cart:cart_details' %}">Cart<span>{{ total_items | length }}</span></a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'cart:cart_details' %}">Cart<span>0</span></a>
+                        </li>
+                    {% endif %}
+                {% endwith %}
+
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>

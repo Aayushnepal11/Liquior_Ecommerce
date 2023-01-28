@@ -241,4 +241,8 @@ body {
   color: #fff;
   font-size: 22px;
   letter-spacing: 2px;
+}
+
+.nav .nav-pills a:hover {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

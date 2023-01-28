@@ -1,13 +1,21 @@
 from django.contrib import admin
-from .models import FeaturedProducts, Contact
+from .models import Category, Product, Contact
+
 
 # Register your models here.
 
 
-@admin.register(FeaturedProducts)
-class FeatureProductAdmin(admin.ModelAdmin):
-    list_display = ('name',)
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name', 'slug')
+
+
+@admin.register(Product)
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ('name', 'slug', 'price', 'image')
+
+
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', )
+    list_display = ('name',)
