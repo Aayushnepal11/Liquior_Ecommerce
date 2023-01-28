@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load django_bootstrap5 %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h1>{{ products.name }}</h1>
+            <img src="{{ products.imageURL }}" alt="" />
+            <a href="{{ products.category.get_absolute_url }}">{{ products.category }}</a>
+            <p>Rs. {{ products.price }}</p>
+            <form action="{% url 'cart:add_to_cart' products.id %}" method="post">
+                {{ cartForm }}
+                {% csrf_token %}
+                <input type="submit" value="Add to Cart" class="btn btn-secondary" />
+            </form>
+        </div>
+    </div>
+{% endblock content %}
