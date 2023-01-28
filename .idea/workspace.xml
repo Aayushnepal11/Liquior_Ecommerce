@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="516e4654-6995-4e70-a5db-fb8e6c0778cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/templates/cart/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/templates/cart/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liquor_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/liquor_store/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liquor_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/liquor_store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/templates/orders/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders/templates/orders/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/payment/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/product_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/product_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registartion/logged_out.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\templates\registartion" />
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\templates\pages" />
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\templates\assets\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="liquor_store" type="Python.DjangoServer" factoryName="Django server">
       <module name="liquor_store" />
@@ -92,7 +101,7 @@
       <workItem from="1674201075692" duration="1520000" />
       <workItem from="1674227361475" duration="619000" />
       <workItem from="1674813730273" duration="5229000" />
-      <workItem from="1674865294663" duration="25303000" />
+      <workItem from="1674865294663" duration="33929000" />
     </task>
     <servers />
   </component>

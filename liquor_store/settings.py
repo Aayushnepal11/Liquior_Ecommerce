@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -147,6 +149,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CART_SESSION_ID = 'cart'
 
 # Stripe Setting
-STRIPE_PUBLISHABLE_KEY = 'pk_test_51MV8GuJlZOzUoI5kcWKdKJFUdLqYBDgMaQAmvPBEPIK8sgGpeGmv2gWYp7V6rRfjdG3411vWHCmuj5t3RewrmH6N00XBgUbabN',
-STRIPE_SECRET_KEY = 'sk_test_51MV8GuJlZOzUoI5kmu5mEySrJ30Ol99Ee2wzjGQbVKI70C4NydayqD7NxyTpQMaF1NBxCRJ7E59MCYKbSC11yFhu00BiuMTde4',
-API_VERSION = '2022-08-01'
+STRIPE_PUBLISHABLE_KEY = '''
+pk_test_51MV8GuJlZOzUoI5kcWKdKJFUdLqYBDgMaQAmvPBEPIK8sgGpeGmv2gWYp7V6rRfjdG3411vWHCmuj5t3RewrmH6N00XBgUbabN
+'''
+STRIPE_SECRET_KEY = '''
+sk_test_51MV8GuJlZOzUoI5kmu5mEySrJ30Ol99Ee2wzjGQbVKI70C4NydayqD7NxyTpQMaF1NBxCRJ7E59MCYKbSC11yFhu00BiuMTde4
+'''
+
+STRIPE_API_VERSION = '2022-08-01'

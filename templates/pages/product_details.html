@@ -6,13 +6,13 @@
     <div class="container">
         <div class="row">
             <h1>{{ products.name }}</h1>
-            <img src="{{ products.imageURL }}" alt="" />
+            <img src="{{ products.imageURL }}" alt="" class="img-thumbnail" style="width: 30%"/>
             <a href="{{ products.category.get_absolute_url }}">{{ products.category }}</a>
             <p>Rs. {{ products.price }}</p>
             <form action="{% url 'cart:add_to_cart' products.id %}" method="post">
                 {{ cartForm }}
                 {% csrf_token %}
-                <input type="submit" value="Add to Cart" class="btn btn-secondary" />
+                <input type="submit" value="Add to Cart" class="btn btn-secondary" style="color: #111;" />
             </form>
         </div>
     </div>
