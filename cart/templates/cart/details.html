@@ -20,13 +20,12 @@
                 {% for item in cart %}
                     {% with product=item.product %}
                         <td>
-{#                            <a href="{{ product.get_absolute_url }}">{{ product.imageURL }}</a>#}
                             <img src="{{ product.imageURL }}" alt="{{ product.get_absolute_url }}">
                         </td>
                         <td>{{ product.name }}</td>
                         <td>{{ item.quantity }}</td>
                         <td>
-                            <form action="{% url 'cart:remove_from_cart' product.id %}" method="post">
+                            <form action="{% url 'cart:remove_from_cart' product.id %}" method="post" class="form-control">
                                 <input type="submit" value="Remove" class="btn btn-primary">
                                 {% csrf_token %}
                             </form>

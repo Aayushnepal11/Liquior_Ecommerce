@@ -5,10 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/templates/cart/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart/templates/cart/details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liquor_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/liquor_store/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liquor_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/liquor_store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/templates/orders/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders/templates/orders/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/templates/orders/created.html" beforeDir="false" afterPath="$PROJECT_DIR$/orders/templates/orders/created.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/orders/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/registration/logged_out.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/logged_out.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +59,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\users\templates\registration" />
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\templates\registartion" />
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\templates\pages" />
+      <recent name="C:\Users\neyma\Pictures\Liquior_Ecommerce\templates\assets\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="liquor_store" type="Python.DjangoServer" factoryName="Django server">
       <module name="liquor_store" />
@@ -92,7 +105,8 @@
       <workItem from="1674201075692" duration="1520000" />
       <workItem from="1674227361475" duration="619000" />
       <workItem from="1674813730273" duration="5229000" />
-      <workItem from="1674865294663" duration="25303000" />
+      <workItem from="1674865294663" duration="34280000" />
+      <workItem from="1674946497978" duration="3332000" />
     </task>
     <servers />
   </component>
