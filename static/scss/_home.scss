@@ -1,11 +1,31 @@
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
+    .slider-text{
+        top: 5rem !important;
+        left: 0 !important;
+    }
     .navbar-toggler{
         background: #fff !important;
     }
-    .hero-wrap{
-        height: auto;
+    .nav-link span{
+        left: 58% !important;
+        top: 87% !important;
+        width: fit-content;
     }
-    .slider-text{
-        left: 20%;
+    .hero-wrap{
+        background-position: 50% -3px !important;
+    }
+    section .text-center{
+        left: -20%;
+    }
+    .card{
+        margin: 0 auto !important;
+    }
+    .footer{
+        justify-content: start !important;
+        .copy{
+            font-size: 18px !important;
+            margin-left: 20px;
+        }
     }
 }
+

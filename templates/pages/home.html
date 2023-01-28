@@ -12,8 +12,8 @@
                         <span>Moments</span>
                     </h1>
                     <div class="d-felx">
-                        <a href="" class="btn btn-primary">Shop Now</a>
-                        <a href="" class="btn btn-secondary">Read More</a>
+                        <a href="{% url 'store:product' %}" class="btn btn-primary">Shop Now</a>
+                        <a href="{% url 'store:about' %}" class="btn btn-secondary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -26,26 +26,19 @@
                 <div class="row">
                     <div class="col-md-6 aboutUs_img d-flex justify-content-center align-items-center img-thumbnail"></div>
                     <div class="col-md-6 justify-conent-center align-items-center description">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam dignissimos
-                            culpa eos! Ut at totam distinctio nulla eum reprehenderit eveniet, dolor quia amet fuga
-                            nobis
-                            sapiente assumenda, labore corporis dicta. </p>
+                        <p>A liquor store is a retail shop that predominantly sells prepackaged liquors – typically in bottles –
+                usually intended to be consumed off the store's premises. </p>
                     </div>
                 </div>
             </section>
             <section class="products">
                 <h1 class="text-center">Featured Products</h1>
                 <div class="row m-3">
-                    {% for products in featured %}
-                        <div class="card" style="width: 18rem;">
-                            <img src="{{ products.imageURL }}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ products.name }}</h5>
-                                <p class="card-text">{{ products.description }}</p>
-                                <a href="#" class="btn btn-primary">Shop Now</a>
-                            </div>
-                        </div>
-                    {% endfor %}
+                    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+                        {% for filter in product %}
+                            <img src="{{ filter.imageURL }}" alt="" class="img img-thumbnail" style="width: 50%">
+                        {% endfor %}
+                    </div>
                 </div>
             </section>
         </div>

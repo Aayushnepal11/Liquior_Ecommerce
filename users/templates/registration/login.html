@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% load django_bootstrap5 %}
+{% load static %}
+{% block content %}
+    <img src="{% static './img/login.jpg' %}" alt="" class="img img-fluid">
+    <div class="container">
+        <div class="row">
+            <form method="post" action="{% url 'users:login' %}" class="form">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% bootstrap_button "Login" name="submit" class="btn btn-primary" %}
+                <input type="hidden" value="{% url 'store:home' %}" name="next"/>
+            </form>
+
+        </div>
+    </div>
+{% endblock content %}

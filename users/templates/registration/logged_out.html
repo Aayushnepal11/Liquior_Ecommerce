@@ -1,0 +1,12 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></div>{% endblock %}
+
+{% block content %}
+
+<p>You've been logout. Thanks for visiting the Liquor Store.!</p>
+
+<p><a href="{% url 'users:login' %}">{% trans 'Log in again' %}</a></p>
+
+{% endblock %}

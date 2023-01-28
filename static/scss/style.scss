@@ -1,6 +1,6 @@
-@import "form";
 @import "home";
 @import "card";
+
 
 @mixin Flex {
     align-items: center;
@@ -87,6 +87,15 @@ body {
 
 .nav-link {
     color: #fff;
+    span{
+        position: absolute;
+        top: 4px;
+        right: 60px;
+        color: green;
+        padding: 0 7px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
 }
 
 .r-nav {
@@ -109,7 +118,7 @@ body {
     background-size: cover;
     background-attachment: scroll;
     position: relative;
-
+    
     &::after {
         content: '';
         position: absolute;
@@ -227,5 +236,15 @@ body {
         color: #fff;
         font-size: 22px;
         letter-spacing: 2px;
+    }
+}
+
+.nav {
+    .nav-pills{
+       a{
+        &:hover{
+            color: #fff;
+        }
+       }
     }
 }

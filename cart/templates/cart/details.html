@@ -1,0 +1,50 @@
+{% extends 'index.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Your Cart Details</h1>
+            <table class="table dashboard">
+                <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Remove</th>
+                    <th>unit Price</th>
+                    <th>Total Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in cart %}
+                    {% with product=item.product %}
+                        <td>
+                            <img src="{{ product.imageURL }}" alt="{{ product.get_absolute_url }}">
+                        </td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ item.quantity }}</td>
+                        <td>
+                            <form action="{% url 'cart:remove_from_cart' product.id %}" method="post" class="form-control">
+                                <input type="submit" value="Remove" class="btn btn-primary">
+                                {% csrf_token %}
+                            </form>
+                        </td>
+                        <td>Rs.{{ item.price }}</td>
+                        <td>Rs.{{ item.total_price }}</td>
+                    {% endwith %}
+                {% endfor %}
+                    <tr>
+                        <td>Total</td>
+                        <td colspan="4"></td>
+                        <td>Rs.{{ cart.get_total_price }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <a href="{% url 'order:create_order' %}" class="btn btn-primary">Checkout</a>
+                <a href="{% url 'store:product' %}" class="btn btn-primary">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
