@@ -17,7 +17,7 @@
         {% for item in order.items.all %}
             <tr class="row{% cycle "1" "2" %}">
                 <td>
-                    <img src="{{ item.product.imageURL }}" alt="">
+                    <img src="{{ item.product.imageURL }}" alt="" style="width: 20%">
                 </td>
                 <td>{{ item.product.name }}</td>
                 <td>Rs.{{ item.price }}</td>
@@ -27,14 +27,17 @@
         {% endfor %}
         <tr>
             <td colspan="4">Total</td>
-            {% for total_product in order.items.all %}
-                <td>Rs.{{ total_product.get_cost }}</td>
-            {% endfor %}
+            <td>
+                RS.{{ order.get_total_cost }}
+            </td>
+{#            {% for total_product in order.items.all %}#}
+{#                <td>Rs.{{ total_product.get_cost }}</td>#}
+{#            {% endfor %}#}
         </tr>
         </tbody>
     </table>
     <form action="{% url "payment:process" %}" method="post">
+{#        {% csrf_token %}#}
         <input type="submit" value="Pay now" class="btn btn-secondary" style="color: #111;">
-        {% csrf_token %}
     </form>
 {% endblock content %}

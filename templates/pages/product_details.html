@@ -9,8 +9,9 @@
             <img src="{{ products.imageURL }}" alt="" class="img-thumbnail" style="width: 30%"/>
             <a href="{{ products.category.get_absolute_url }}">{{ products.category }}</a>
             <p>Rs. {{ products.price }}</p>
-            <form action="{% url 'cart:add_to_cart' products.id %}" method="post">
-                {{ cartForm }}
+            <form action="{% url 'cart:add_to_cart' products.id %}" method="post" class="col-md-3">
+                {% bootstrap_form cartForm %}
+{#                {{ cartForm }}#}
                 {% csrf_token %}
                 <input type="submit" value="Add to Cart" class="btn btn-secondary" style="color: #111;" />
             </form>
