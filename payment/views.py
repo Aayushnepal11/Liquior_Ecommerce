@@ -1,15 +1,16 @@
-from django.shortcuts import render, redirect, reverse, \
-    get_object_or_404
 import stripe
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.conf import settings
 from orders.models import Order
+from django.views.decorators.csrf import csrf_exempt
 from decimal import Decimal
 
 # Create your views here.
 stripe.api_key = settings.STRIPE_SECRET_KEY
-stripe.api_version = settings.STRIPE_API_VERSION
+LOCALHOST_URL = 'http://127.0.0.1:8000'
 
 
+@csrf_exempt
 def payment_process(request):
     order_id = request.session.get('order_id', None)
     order = get_object_or_404(Order, id=order_id)
@@ -19,7 +20,9 @@ def payment_process(request):
             reverse('payment:completed'))
         cancel_url = request.build_absolute_uri(
             reverse('payment:canceled'))
-
+        obj = Order.objects.get(id=order_id)
+        obj.paid = True
+        obj.save()
         # Stripe checkout session data
         session_data = {
             'mode': 'payment',
@@ -28,6 +31,7 @@ def payment_process(request):
             'cancel_url': cancel_url,
             'line_items': []
         }
+
         # add order items to the Stripe checkout session
         for item in order.items.all():
             session_data['line_items'].append({
